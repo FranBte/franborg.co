@@ -1,0 +1,127 @@
+.about {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-dark-1;
+
+    @media only screen and (min-width: $bp-medium) {
+        flex-flow: row-reverse nowrap;
+        padding-top: 2rem;
+    }
+
+    &__intro {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (min-width: $bp-medium) {
+            width: 50%;
+        }
+    }
+
+    &__img {
+        height: 25rem;
+        width: 25rem;
+        border-radius: 100%;
+        background-image: url(../imgs/profile-irl.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: .2rem solid $color-white;
+        margin: 5rem;
+
+        @media only screen and (min-width: $bp-medium) {
+            margin: 0;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            width: 32rem;
+            height: 32rem;
+        }
+
+        &:hover {
+            background-image: url(../imgs/Untitled.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 0.2rem solid #fe6019;
+        }
+    }
+
+    &__text {
+        color: $color-white;
+        padding: 0 3rem;
+
+        &--hl {
+            background: none;
+            color: $color-orange-1;
+        }
+    }
+}
+
+// Portfolio
+.portfolio {
+    &__title {
+        margin: 2.5rem 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        @media only screen and (min-width: $bp-medium) {
+            flex-flow: row wrap;
+            justify-content: center
+        }
+    }
+
+    &__card {
+        width: 85%;
+        height: 100%;
+        padding-bottom: 2rem;
+        /* border: 1.5px solid #00293C; */
+        border: 0.15rem solid $color-grey-dark-1;
+        border-radius: .4rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        margin: 1rem;
+        background-color: $color-grey-dark-1;
+
+        &-title {
+            color: $color-white;
+            margin: 1.3rem 0 0 2rem;
+            font-size: 1.8rem;
+        }
+
+        @media only screen and (min-width: $bp-small) {
+            width: 65%;
+        }
+
+        @media only screen and (min-width: $bp-medium) {
+            width: 45%;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            width: 30%;
+        }
+    }
+
+    &__btn {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        &-more {
+            width: 15rem;
+            border-radius: .8rem;
+            padding: 1.5rem 3rem;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{partial "head"}}
+
+<body class="body">
+    {{partial "header" .}}
+
+    <main class="blog">
+        {{.Content}}
+        <h1 class="blog__pg-title">Blog</h1>
+
+        <section class="blog__items">
+            <ul class="blog__list">
+                {{ range .Pages}}
+                <li class="blog__item">
+                    {{ with .Resources.ByType "image" }}
+                    <!-- how to place an image from md -->
+                    {{ end }}
+                    <a class="blog__title" href="{{.URL}}">{{.Title}}</a>
+                    <p class="blog__intro"> {{.Summary | truncate 130}}
+                    </p>
+                </li>
+
+                {{end}}
+            </ul>
+
+        </section>
+
+    </main>
+
+    {{partial "footer" .}}
+
+</body>
+
+</html>

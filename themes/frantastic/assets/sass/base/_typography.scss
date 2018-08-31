@@ -1,0 +1,73 @@
+.header-logo {
+    font-family: $font-logo;
+    color: $color-white;
+    padding: 0 2rem;
+    font-weight: 300;
+    letter-spacing: 0.15rem;
+}
+
+// navigation buttons
+.nav__item {
+    list-style: none;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 2rem;
+}
+
+// about me 
+.about__text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+
+    @media only screen and (min-width: $bp-small) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        font-size: 2.5rem;
+    }
+}
+
+.btn {
+    font-weight: 100;
+    font-size: 2rem;
+    font-family: inherit;
+}
+
+//titles 
+.portfolio__title,
+.blog__pg-title,
+.blogpost__title,
+.project__pg-title {
+    @include pg-title;
+}
+
+.blog__title,
+.project__title {
+    @include item-title;
+}
+
+// truc text
+.blog__intro {
+    font-size: 1.3rem;
+}
+
+.blogpost,
+    {
+    font-size: 1.5rem;
+
+    p,
+    h1,
+    h2,
+    h3 {
+        padding-bottom: 1.2rem;
+    }
+}
+
+.project__desc {
+    p {
+        font-size: 1.5rem;
+    }
+}

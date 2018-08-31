@@ -20,9 +20,8 @@
         <section class="portfolio">
 
             <h2 class="portfolio__title">Picked Projects</h2>
-            <!-- projects\\ is using windows path-syntax whereas for linux this would be projects/ TO DO Nag Ollie and be careful when deploying -->
             <section class="portfolio__list">
-                {{ range .Site.Pages}} {{ if eq .Dir "projects\\" }} {{if eq .Params.featured true}}
+                {{ range .Site.Pages}} {{ if in .RelPermalink "/projects/" }} {{if eq .Params.featured true}}
                 <section class="portfolio__card">
                     <p data-height="250" data-theme-id="dark" data-slug-hash="{{.Params.codepenid}}" data-default-tab="result"
                         data-user="fran-cesca" data-pen-title="Light the Bulb" data-preview="true" class="codepen">See
@@ -34,7 +33,6 @@
                     <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                     <article class="portfolio__card-btmbar">
                         <p class="portfolio__card-title">{{.Title}}</p>
-                        <!-- <div class="card__readmore"></div> -->
                     </article>
                 </section>
                 {{end}} {{end}} {{end}}

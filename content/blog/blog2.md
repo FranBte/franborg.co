@@ -1,7 +1,7 @@
 ---
 title: "Blog2"
 date: 2018-07-26T14:13:44+07:00
-draft: true
+draft: false
 ---
 
 # TestTitle

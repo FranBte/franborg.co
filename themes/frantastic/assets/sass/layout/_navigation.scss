@@ -19,17 +19,22 @@
         outline: inherit;
         fill: $color-white;
         margin: .5rem 0 0 1rem;
+
+        &:hover {
+            fill: $color-orange-1;
+        }
     }
 
     &__items {
         width: 100%;
-        height: 33.33rem;
+        height: 100vh;
         background-color: $color-grey-dark-1;
         display: flex;
         flex-flow: column;
         position: absolute;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+        padding-bottom: 5rem;
 
         @media only screen and (min-width: $bp-medium) {
             position: initial;
@@ -37,6 +42,8 @@
             justify-content: space-around;
             height: 100%;
             background-color: $color-grey-dark-2;
+            padding-bottom: 0;
+            padding-left: 1rem;
         }
     }
 
@@ -60,6 +67,11 @@
         // icon alignment
         display: flex;
         align-items: center;
+        padding-bottom: 5rem;
+
+        @media only screen and (min-width: $bp-medium) {
+            padding: 0;
+        }
 
         &:hover {
             color: $color-orange-1;

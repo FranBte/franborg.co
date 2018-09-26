@@ -5,6 +5,7 @@
 
 <body class="body">
     {{partial "header" .}}
+
     <!-- <img class="headerimage" src="{{.Params.headerimage}}" alt=""> -->
 
     <!-- <img srcset="/imgs/beer-320px.png 320w,
@@ -16,6 +17,9 @@
 
     <!-- <h1 class="blogpost__title"></h1> -->
     <main class="blogpost">
+        <!-- {{range .Resources.Match "*"}} -->
+        <!-- <img src="{{(.Resize "350x150").Permalink}}" alt=""> -->
+        <!-- {{end}} -->
         {{.Content}} {{ range .Pages}} {{end}}
     </main>
 

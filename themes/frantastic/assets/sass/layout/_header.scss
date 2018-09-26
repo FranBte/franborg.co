@@ -8,4 +8,9 @@
     margin-right: 1rem;
     position: fixed;
     box-shadow: 0 .1rem .2rem $color-grey-dark-2;
+    z-index: 100;
+
+    @media only screen and (min-width: $bp-medium) {
+        padding-right: 5rem;
+    }
 }

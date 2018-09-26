@@ -23,8 +23,8 @@
     }
 
     &__img {
-        height: 25rem;
-        width: 25rem;
+        height: 27rem;
+        width: 27rem;
         border-radius: 100%;
         background-image: url(../imgs/profile-irl.jpg);
         background-position: center;
@@ -43,11 +43,11 @@
         }
 
         &:hover {
-            background-image: url(../imgs/Untitled.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border: 0.2rem solid #fe6019;
+            border: 0.25rem solid #fe6019;
+        }
+
+        &:hover>.css-img {
+            display: initial;
         }
     }
 

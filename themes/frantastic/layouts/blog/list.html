@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 {{partial "head"}}
@@ -9,21 +8,25 @@
     <main class="blog">
         {{.Content}}
         <h1 class="blog__pg-title">Blog</h1>
-
+        <h2 class="blog__temporary">Coming soon</h2>
         <section class="blog__items">
-            <ul class="blog__list">
+            <!-- <ul class="blog__list">
                 {{ range .Pages}}
                 <li class="blog__item">
-                    {{ with .Resources.ByType "image" }}
-                    <!-- how to place an image from md -->
-                    {{ end }}
-                    <a class="blog__title" href="{{.URL}}">{{.Title}}</a>
+                    <div class="blog__image">
+                        {{range .Resources.Match "header.png"}}
+                        <img src="{{ .Permalink }}">
+                        {{end}}
+                    </div>
+                    <a class="
+                        blog__title" href="{{.URL}}">{{.Title}}</a>
                     <p class="blog__intro"> {{.Summary | truncate 130}}
                     </p>
                 </li>
 
                 {{end}}
-            </ul>
+
+            </ul> -->
 
         </section>
 

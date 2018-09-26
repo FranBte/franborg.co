@@ -2,7 +2,7 @@
 title: "Test Title"
 date: 2018-07-26T14:13:44+07:00
 draft: false
-image: "/imgs/beer.png"
+image: "---"
 ---
 
 # Blog Post 1 

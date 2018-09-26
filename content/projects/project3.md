@@ -6,4 +6,4 @@ codepenid: "XYMxrq"
 featured: true
 ---
 
-Pure CSS image of a burger which implements a simple animation on hover. Pure CSS image of a burger.
+Pure CSS image of a burger which implements a simple animation on hover.

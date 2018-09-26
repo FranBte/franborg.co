@@ -5,4 +5,4 @@ draft: false
 codepenid: "JZZBbo"
 ---
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates vero natus?
+Pure CSS image of one of my favourite fictional detectives, Sherlock Holmes.

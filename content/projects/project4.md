@@ -6,5 +6,4 @@ codepenid: "vrJrEa"
 featured: true
 ---
 
-
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates vero natus?
+Pure CSS image of a cross section of three fruits.

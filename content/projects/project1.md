@@ -1,9 +1,9 @@
 ---
-title: "Light the Bulb"
+title: "Beer Glass"
 date: 2018-08-02T16:01:39+07:00
 draft: false
-codepenid: "vagJOL"
+codepenid: "pKjpJm"
 featured: true
 ---
 
-CSS image of a lightbulb using JavaScript. Switch on the lightbulb!
+Pure CSS image of a beer glass.

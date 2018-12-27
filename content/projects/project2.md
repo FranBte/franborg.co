@@ -5,4 +5,4 @@ draft: false
 codepenid: "JZZBbo"
 ---
 
-Pure CSS image of one of my favourite fictional detectives, Sherlock Holmes.
+Pure CSS image of the great detective, Sherlock Holmes.

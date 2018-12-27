@@ -6,4 +6,4 @@ codepenid: "vagJOL"
 featured: true
 ---
 
-CSS image of a lightbulb using JavaScript. The image implements a playful design when the user interacts on a click.
+CSS image of a lightbulb using JavaScript. Switch on the lightbulb!

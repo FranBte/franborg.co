@@ -360,19 +360,22 @@ html {
 .nav__item {
   display: flex;
   align-items: center;
-  padding: 5rem; }
+  padding: 5rem;
+  font-size: 1.2em; }
   @media only screen and (min-width: 48em) {
     .nav__item {
-      padding: 0 0.5em; } }
-  .nav__item:hover {
-    background-color: #faab86;
-    color: #1d2122; }
+      padding: 0 0.5em; }
+      .nav__item :hover {
+        background-color: #faab86;
+        color: #1d2122; } }
   .nav__item:hover > .nav__icons {
     fill: #faab86; }
 
 .nav__icons {
   fill: #f3f2f0;
-  margin: 0.8rem; }
+  margin: 0.8rem;
+  height: 1em;
+  width: 1em; }
 
 @media only screen and (min-width: 48em) {
   .nav__icons, .nav__mobile-btn {

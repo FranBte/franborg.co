@@ -68,14 +68,15 @@
     display: flex;
     align-items: center;
     padding: 5rem;
+    font-size: 1.2em;
 
     @media only screen and (min-width: $bp-medium) {
       padding: 0 0.5em;
-    }
 
-    &:hover {
-      background-color: $color-orange-1;
-      color: $color-grey-dark-2;
+      :hover {
+        background-color: $color-orange-1;
+        color: $color-grey-dark-2;
+      }
     }
 
     &:hover > .nav__icons {
@@ -86,6 +87,8 @@
   &__icons {
     fill: $color-white;
     margin: 0.8rem;
+    height: 1em;
+    width: 1em;
   }
 
   &__icons,

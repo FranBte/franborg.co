@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on francesca</title>
+    <link>https://franborg.co/projects/</link>
+    <description>Recent content in Projects on francesca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://franborg.co/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Light the Bulb</title>
+      <link>https://franborg.co/projects/project9/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://franborg.co/projects/project9/</guid>
+      <description>CSS image of a lightbulb - switch it on!</description>
+    </item>
+    
+    <item>
+      <title>Sunday Breakfast</title>
+      <link>https://franborg.co/projects/project8/</link>
+      <pubDate>Sat, 04 Aug 2018 15:34:34 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project8/</guid>
+      <description>Pure CSS image of my favourite meal of the week.</description>
+    </item>
+    
+    <item>
+      <title>Fruit</title>
+      <link>https://franborg.co/projects/project4/</link>
+      <pubDate>Sat, 04 Aug 2018 15:06:00 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project4/</guid>
+      <description>Pure CSS image of a cross section of three fruits.</description>
+    </item>
+    
+    <item>
+      <title>Whale</title>
+      <link>https://franborg.co/projects/project5/</link>
+      <pubDate>Fri, 03 Aug 2018 15:34:34 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project5/</guid>
+      <description>Pure CSS image of a whale.</description>
+    </item>
+    
+    <item>
+      <title>Tic-Tac-Toe</title>
+      <link>https://franborg.co/projects/project2/</link>
+      <pubDate>Fri, 03 Aug 2018 14:15:29 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project2/</guid>
+      <description>Click to play a game of tic-tac-toe!</description>
+    </item>
+    
+    <item>
+      <title>Camping</title>
+      <link>https://franborg.co/projects/project1/</link>
+      <pubDate>Thu, 02 Aug 2018 16:01:39 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project1/</guid>
+      <description>Click to change from day to night</description>
+    </item>
+    
+  </channel>
+</rss>

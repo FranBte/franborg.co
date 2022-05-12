@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>francesca</title>
+    <link>https://franborg.co/</link>
+    <description>Recent content on francesca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://franborg.co/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Light the Bulb</title>
+      <link>https://franborg.co/projects/project9/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://franborg.co/projects/project9/</guid>
+      <description>CSS image of a lightbulb - switch it on!</description>
+    </item>
+    
+    <item>
+      <title>Sunday Breakfast</title>
+      <link>https://franborg.co/projects/project8/</link>
+      <pubDate>Sat, 04 Aug 2018 15:34:34 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project8/</guid>
+      <description>Pure CSS image of my favourite meal of the week.</description>
+    </item>
+    
+    <item>
+      <title>Fruit</title>
+      <link>https://franborg.co/projects/project4/</link>
+      <pubDate>Sat, 04 Aug 2018 15:06:00 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project4/</guid>
+      <description>Pure CSS image of a cross section of three fruits.</description>
+    </item>
+    
+    <item>
+      <title>Whale</title>
+      <link>https://franborg.co/projects/project5/</link>
+      <pubDate>Fri, 03 Aug 2018 15:34:34 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project5/</guid>
+      <description>Pure CSS image of a whale.</description>
+    </item>
+    
+    <item>
+      <title>Tic-Tac-Toe</title>
+      <link>https://franborg.co/projects/project2/</link>
+      <pubDate>Fri, 03 Aug 2018 14:15:29 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project2/</guid>
+      <description>Click to play a game of tic-tac-toe!</description>
+    </item>
+    
+    <item>
+      <title>Camping</title>
+      <link>https://franborg.co/projects/project1/</link>
+      <pubDate>Thu, 02 Aug 2018 16:01:39 +0700</pubDate>
+      
+      <guid>https://franborg.co/projects/project1/</guid>
+      <description>Click to change from day to night</description>
+    </item>
+    
+    <item>
+      <title>Blog2</title>
+      <link>https://franborg.co/blog/blog2/</link>
+      <pubDate>Thu, 26 Jul 2018 14:13:44 +0700</pubDate>
+      
+      <guid>https://franborg.co/blog/blog2/</guid>
+      <description>TestTitle TestTitle2 TestTitle3 Paragraphs are separated by a blank line.
+2nd paragraph. Italic, bold, and monospace. Itemized lists look like:
+ this one that one the other one  Note that &amp;mdash; not considering the asterisk &amp;mdash; the actual text content starts at 4-columns in.
+ Block quotes are written like so.
+They can span multiple paragraphs, if you like.
+ Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex.</description>
+    </item>
+    
+    <item>
+      <title>Blog3</title>
+      <link>https://franborg.co/blog/blog3/</link>
+      <pubDate>Thu, 26 Jul 2018 14:13:44 +0700</pubDate>
+      
+      <guid>https://franborg.co/blog/blog3/</guid>
+      <description>TestTitle TestTitle2 TestTitle3 Paragraphs are separated by a blank line.
+2nd paragraph. Italic, bold, and monospace. Itemized lists look like:
+ this one that one the other one  Note that &amp;mdash; not considering the asterisk &amp;mdash; the actual text content starts at 4-columns in.
+ Block quotes are written like so.
+They can span multiple paragraphs, if you like.
+ Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex.</description>
+    </item>
+    
+    <item>
+      <title>Test Title</title>
+      <link>https://franborg.co/blog/blog1/</link>
+      <pubDate>Thu, 26 Jul 2018 14:13:44 +0700</pubDate>
+      
+      <guid>https://franborg.co/blog/blog1/</guid>
+      <description>Blog Post 1 Paragraphs are separated by a blank line.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequatur voluptatem, vitae a ad quasi suscipit deserunt dolor? Illo aperiam veritatis accusantium voluptas aspernatur suscipit provident, id velit dicta. Numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+2nd paragraph. Italic, bold, and monospace. Itemized lists look like:
+ this one that one the other one  Note that &amp;mdash; not considering the asterisk &amp;mdash; the actual text content starts at 4-columns in.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,200 +1,198 @@
 .css-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 .backdrop {
-    // background-color: red;
-    height: 26.5rem;
-    width: 26.5rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    background-color: $color-white;
-    justify-content: center;
-    padding-top: 2rem;
-    border-radius: 100%;
-    z-index: 10;
-    position: relative;
+  height: 26.5rem;
+  width: 26.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: $color-white;
+  justify-content: center;
+  padding-top: 2rem;
+  border-radius: 100%;
+  z-index: 10;
+  position: relative;
 
-    @media only screen and (min-width: $bp-large) {
-        width: 31.5rem;
-        height: 31.5rem;
-    }
+  @media only screen and (min-width: $bp-large) {
+    width: 31.5rem;
+    height: 31.5rem;
+  }
 }
 
 .hair {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
-    &__r,
-    &__l {
-        height: 7.6rem;
-        width: 9rem;
-        background-color: #4b2821;
-        border-radius: 80rem 0 80rem 0;
-        border-bottom: 1.5rem solid #331c17;
-        position: absolute;
-        top: -1rem;
-        right: -0.5rem;
-        z-index: 50;
-    }
+  &__r,
+  &__l {
+    height: 7.6rem;
+    width: 9rem;
+    background-color: #4b2821;
+    border-radius: 80rem 0 80rem 0;
+    border-bottom: 1.5rem solid #331c17;
+    position: absolute;
+    top: -1rem;
+    right: -0.5rem;
+    z-index: 50;
+  }
 
-    &__l {
-        border-radius: 0 80rem 0 80rem;
-        left: -0.5rem;
-    }
+  &__l {
+    border-radius: 0 80rem 0 80rem;
+    left: -0.5rem;
+  }
 }
 
 .hair__back {
-    height: 21rem;
-    width: 15.8rem;
-    background-color: #4b2821;
-    position: absolute;
-    border-radius: 45vmin 45vmin 20vmin 20vmin;
-    z-index: 10;
+  height: 21rem;
+  width: 15.8rem;
+  background-color: #4b2821;
+  position: absolute;
+  border-radius: 45vmin 45vmin 20vmin 20vmin;
+  z-index: 10;
 }
 
 .head {
-    height: 16rem;
-    width: 12rem;
-    border-radius: 30% 30% 50% 50%;
-    background-color: #f8e3cc;
-    z-index: 40;
+  height: 16rem;
+  width: 12rem;
+  border-radius: 30% 30% 50% 50%;
+  background-color: #f8e3cc;
+  z-index: 40;
 }
 
 .eyebrowr,
 .eyebrowl {
-    height: .5rem;
-    width: 3rem;
-    border-radius: 100%;
-    border-top: .3rem solid #331c17;
-    position: relative;
-    top: 5.5rem;
-    left: 1.5rem;
-    transform: rotate(-5deg);
+  height: 0.5rem;
+  width: 3rem;
+  border-radius: 100%;
+  border-top: 0.3rem solid #331c17;
+  position: relative;
+  top: 5.5rem;
+  left: 1.5rem;
+  transform: rotate(-5deg);
 }
 
 .eyebrowr {
-    left: 7.5rem;
-    top: 6.1rem;
-    transform: rotate(5deg);
+  left: 7.5rem;
+  top: 6.1rem;
+  transform: rotate(5deg);
 }
 
 .glasses {
+  position: relative;
+  bottom: 4.4rem;
+
+  &__r,
+  &__l {
+    height: 3.2rem;
+    width: 4rem;
+    border: 0.125rem solid black;
+    background-color: rgba(248, 248, 255, 0.438);
+    border-radius: 40rem 40rem 50rem 50rem;
+    position: absolute;
+    top: 10rem;
+    left: 1.4rem;
+    z-index: 1;
+  }
+
+  &__r {
+    top: 10rem;
+    left: 6.8rem;
+  }
+
+  &__mid {
+    height: 1rem;
+    width: 1.8rem;
+    border-radius: 100vmin;
+    border-top: 0.2vmin solid black;
     position: relative;
-    bottom: 4.4rem;
-
-    &__r,
-    &__l {
-        height: 3.2rem;
-        width: 4rem;
-        border: 0.125rem solid black;
-        background-color: rgba(248, 248, 255, 0.438);
-        border-radius: 40rem 40rem 50rem 50rem;
-        position: absolute;
-        top: 10rem;
-        left: 1.4rem;
-        z-index: 1;
-    }
-
-    &__r {
-        top: 10rem;
-        left: 6.8rem;
-    }
-
-    &__mid {
-        height: 1rem;
-        width: 1.8rem;
-        border-radius: 100vmin;
-        border-top: 0.2vmin solid black;
-        position: relative;
-        left: 5.2rem;
-        top: 10.4rem;
-    }
+    left: 5.2rem;
+    top: 10.4rem;
+  }
 }
 
 .eye__right,
 .eye__left {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 100%;
-    background-color: #613f43;
-    position: absolute;
-    right: 1.5rem;
-    top: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 100%;
+  background-color: #613f43;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
 }
 
 .cheek {
+  &__r,
+  &__l {
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 100vmin;
+    background-color: #eecdb8;
+    filter: blur(0.4rem);
+    position: relative;
+    top: 7rem;
+    left: 1.5rem;
+  }
 
-    &__r,
-    &__l {
-        height: 2rem;
-        width: 2.5rem;
-        border-radius: 100vmin;
-        background-color: #eecdb8;
-        filter: blur(.4rem);
-        position: relative;
-        top: 7rem;
-        left: 1.5rem;
-    }
-
-    &__l {
-        top: 5rem;
-        left: 7.8rem;
-    }
+  &__l {
+    top: 5rem;
+    left: 7.8rem;
+  }
 }
 
 .mouth {
-    height: 2rem;
-    width: 4rem;
-    border-radius: 0 0 100rem 100rem;
-    background-color: #414a53;
-    position: relative;
-    top: 6rem;
-    left: 4rem;
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0 0 100rem 100rem;
+  background-color: #414a53;
+  position: relative;
+  top: 6rem;
+  left: 4rem;
 }
 
 .mouth__tongue {
-    height: 1.5rem;
-    width: 2rem;
-    border-radius: 100% 0 100% 0;
-    background-color: #EE7D88;
-    transform: rotate(7deg);
-    position: absolute;
-    bottom: .1rem;
-    left: 1.6rem;
+  height: 1.5rem;
+  width: 2rem;
+  border-radius: 100% 0 100% 0;
+  background-color: #ee7d88;
+  transform: rotate(7deg);
+  position: absolute;
+  bottom: 0.1rem;
+  left: 1.6rem;
 }
 
 .neck {
-    height: 3rem;
+  height: 3rem;
 }
 
 .neck,
 .neck__shadow {
-    width: 4rem;
-    border-radius: 0 0 100% 100%;
-    background-color: #f8e3cc;
-    position: relative;
-    bottom: 6.3rem;
-    z-index: 20;
+  width: 4rem;
+  border-radius: 0 0 100% 100%;
+  background-color: #f8e3cc;
+  position: relative;
+  bottom: 6.3rem;
+  z-index: 20;
 
-    &__shadow {
-        height: 2.8rem;
-        background-color: #b39a94;
-        bottom: 1.5rem;
-    }
+  &__shadow {
+    height: 2.8rem;
+    background-color: #b39a94;
+    bottom: 1.5rem;
+  }
 }
 
 .shoulders {
-    height: 6rem;
-    width: 15rem;
-    background-color: black;
-    border-radius: 50%;
-    position: relative;
-    top: 1rem;
-    z-index: 15;
+  height: 6rem;
+  width: 15rem;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 1rem;
+  z-index: 15;
 }

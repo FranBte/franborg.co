@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  {{partial "head"}}
 
-{{partial "head"}}
-
-<body class="body">
+  <body class="body">
     {{partial "header" .}}
 
     <main class="project">
-        {{.Content}}
-        <h1 class="project__pg-title">Projects</h1>
+      {{.Content}}
+      <h1 class="project__pg-title">Pet Projects</h1>
 
-        <section class="project__items">
-            <ul class="project__list">
-                {{ range .Pages}}
-                <li class="project__item">
-                    <section class="project__link">
-                        <p data-height="250" data-theme-id="dark" data-slug-hash="{{.Params.codepenid}}"
-                            data-default-tab="result" data-user="fran-cesca" data-pen-title="Light the Bulb"
-                            data-preview="true" class="codepen">See the Pen
-                            <a href="https://codepen.io/fran-cesca/pen/{{.Params.codepenid}}/">Light the Bulb</a> by
-                            francesca (
-                            <a href="https://codepen.io/fran-cesca">@fran-cesca</a>) on
-                            <a href="https://codepen.io">CodePen</a>.</p>
-                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    </section>
-                    <section class="project__desc">
-                        <h2 class="project__title">{{.Title}}</h2>
-                        {{.Content}}
-                    </section>
+      <section class="project__items">
+        <ul class="project__list">
+          {{ range .Pages}}
+          <li class="project__item">
+            <section class="project__link">
+              <p
+                data-height="250"
+                data-theme-id="dark"
+                data-slug-hash="{{.Params.codepenid}}"
+                data-default-tab="result"
+                data-user="fran-cesca"
+                data-pen-title="Light the Bulb"
+                data-preview="true"
+                class="codepen"
+              >
+                See the Pen
+                <a
+                  href="https://codepen.io/fran-cesca/pen/{{.Params.codepenid}}/"
+                  >Light the Bulb</a
+                >
+                by francesca (
+                <a href="https://codepen.io/fran-cesca">@fran-cesca</a>) on
+                <a href="https://codepen.io">CodePen</a>.
+              </p>
+              <script
+                async
+                src="https://static.codepen.io/assets/embed/ei.js"
+              ></script>
+            </section>
+            <section class="project__desc">
+              <h2 class="project__title">{{.Title}}</h2>
+              {{.Content}}
+            </section>
+          </li>
+          {{end}}
+        </ul>
+      </section>
 
-
-                </li>
-                {{end}}
-            </ul>
-
+      <h2 class="project__pg-title">Other Personal Projects</h2>
+      <section class="project__personal-projects">
+        <section class="project__personal-project">
+          <h3><a href="https://bookmarkllama.com">Bookmark LLama</a></h3>
+          <p>
+            An extension which allows teams to share and sync bookmarks natively
+            in their browsers. Available on Edge, Firefox and Chrome.
+          </p>
         </section>
 
+        <section class="project__personal-project">
+          <h3><a href="https://coriandercorner.com">Coriander Corner</a></h3>
+
+          <p>
+            A blog of recipes as a way to explore and learn SEO and food
+            photography.
+          </p>
+        </section>
+
+        <section class="project__personal-project project-cv">
+          <h3>Interested in collaborating?</h3>
+          <a href="https://cv.franborg.co">Check out my CV</a>
+        </section>
+      </section>
     </main>
 
     {{partial "footer" .}}
-
-</body>
-
+  </body>
 </html>

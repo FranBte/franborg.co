@@ -36,7 +36,6 @@ html {
   @media only screen and (min-width: 62.5em) {
     .about__text {
       font-size: 2.5rem; } }
-
 .btn {
   font-weight: 100;
   font-size: 2rem;
@@ -46,12 +45,11 @@ html {
 .blog__pg-title,
 .blogpost__title,
 .project__pg-title {
-  color: #2A3132;
-  font-size: 3.5rem;
+  color: #2a3132;
+  font-size: 3rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  text-align: center;
-  padding-bottom: 1rem; }
+  text-align: center; }
 
 .blog__title,
 .project__title {
@@ -83,7 +81,7 @@ html {
 
 .btn {
   text-align: center;
-  background-color: #2A3132;
+  background-color: #2a3132;
   width: 18rem;
   border-radius: 0.7rem;
   padding: 1.5rem;
@@ -94,7 +92,7 @@ html {
   .btn:hover {
     transform: translateY(-0.4rem) scale(1.1);
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(42, 49, 50, 0.8);
-    color: #fa6a28; }
+    color: #faab86; }
   .btn:active {
     transform: translateY(0) scale(1.1);
     box-shadow: none; }
@@ -121,7 +119,6 @@ html {
     .backdrop {
       width: 31.5rem;
       height: 31.5rem; } }
-
 .hair {
   display: flex;
   justify-content: center;
@@ -157,10 +154,10 @@ html {
 
 .eyebrowr,
 .eyebrowl {
-  height: .5rem;
+  height: 0.5rem;
   width: 3rem;
   border-radius: 100%;
-  border-top: .3rem solid #331c17;
+  border-top: 0.3rem solid #331c17;
   position: relative;
   top: 5.5rem;
   left: 1.5rem;
@@ -233,10 +230,10 @@ html {
   height: 1.5rem;
   width: 2rem;
   border-radius: 100% 0 100% 0;
-  background-color: #EE7D88;
+  background-color: #ee7d88;
   transform: rotate(7deg);
   position: absolute;
-  bottom: .1rem;
+  bottom: 0.1rem;
   left: 1.6rem; }
 
 .neck {
@@ -285,8 +282,8 @@ html {
     margin: 0 .5rem;
     fill: #f3f2f0; }
     .footer__link:hover {
-      border: 0.1rem dashed #fa6a28;
-      fill: #fa6a28; }
+      border: 0.1rem dashed #faab86;
+      fill: #faab86; }
 
 .header {
   background-color: #1d2122;
@@ -294,15 +291,18 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 6rem;
+  height: 5rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
   position: fixed;
   box-shadow: 0 0.1rem 0.2rem #1d2122;
   z-index: 100; }
+  .header .header-logo:hover {
+    background-color: #faab86;
+    color: #1d2122; }
   @media only screen and (min-width: 48em) {
     .header {
       padding-right: 5rem; } }
-
 @media only screen and (min-width: 48em) {
   .nav {
     display: flex;
@@ -322,14 +322,14 @@ html {
   cursor: pointer;
   outline: inherit;
   fill: #f3f2f0;
-  margin: .5rem 0 0 1rem; }
+  margin: 0.5rem 0 0 1rem; }
   .nav__mobile-btn:hover {
-    fill: #fa6a28; }
+    fill: #faab86; }
 
 .nav__items {
   width: 100%;
   height: 100vh;
-  background-color: #2A3132;
+  background-color: #2a3132;
   display: flex;
   flex-flow: column;
   position: absolute;
@@ -345,9 +345,8 @@ html {
       background-color: #1d2122;
       padding-bottom: 0;
       padding-left: 1rem; } }
-
 .nav--open, .nav--closed {
-  transition: all .5s;
+  transition: all 0.5s;
   transition-timing-function: ease-out; }
 
 .nav--closed {
@@ -361,14 +360,15 @@ html {
 .nav__item {
   display: flex;
   align-items: center;
-  padding-bottom: 5rem; }
+  padding: 5rem; }
   @media only screen and (min-width: 48em) {
     .nav__item {
-      padding: 0; } }
+      padding: 0 0.5em; } }
   .nav__item:hover {
-    color: #fa6a28; }
+    background-color: #faab86;
+    color: #1d2122; }
   .nav__item:hover > .nav__icons {
-    fill: #fa6a28; }
+    fill: #faab86; }
 
 .nav__icons {
   fill: #f3f2f0;
@@ -384,7 +384,7 @@ html {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #2A3132; }
+  background-color: #2a3132; }
   @media only screen and (min-width: 48em) {
     .about {
       flex-flow: row-reverse nowrap;
@@ -423,7 +423,7 @@ html {
     padding: 0 3rem; }
     .about__text--hl {
       background: none;
-      color: #fa6a28; }
+      color: #faab86; }
 
 .portfolio__title {
   margin: 2.5rem 0; }
@@ -436,19 +436,18 @@ html {
     .portfolio__list {
       flex-flow: row wrap;
       justify-content: center; } }
-
 .portfolio__card {
   width: 85%;
   height: 100%;
   padding-bottom: 2rem;
   /* border: 1.5px solid #00293C; */
-  border: 0.15rem solid #2A3132;
-  border-radius: .4rem;
+  border: 0.15rem solid #2a3132;
+  border-radius: 0.4rem;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   margin: 1rem;
-  background-color: #2A3132; }
+  background-color: #2a3132; }
   .portfolio__card-title {
     color: #f3f2f0;
     margin: 1.3rem 0 0 2rem;
@@ -462,21 +461,9 @@ html {
   @media only screen and (min-width: 62.5em) {
     .portfolio__card {
       width: 30%; } }
-
-.portfolio__btn {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem; }
-  .portfolio__btn-more {
-    width: 15rem;
-    border-radius: .8rem;
-    padding: 1.5rem 3rem; }
-
 .blog__pg-title {
-  padding-top: 9rem;
-  padding-bottom: 3.5rem; }
+  padding-top: 7.5rem;
+  padding-bottom: 2rem; }
 
 .blog__items {
   width: 100%;
@@ -490,12 +477,11 @@ html {
     .blog__list {
       flex-flow: row wrap;
       justify-content: center; } }
-
 .blog__item {
   height: 26rem;
   width: 31rem;
-  background-color: #2A3132;
-  border: 0.15rem solid #2A3132;
+  background-color: #2a3132;
+  border: 0.15rem solid #2a3132;
   border-radius: .4rem;
   margin: 1rem;
   display: flex;
@@ -506,9 +492,8 @@ html {
     .blog__item {
       width: 40rem;
       height: 31.1rem; } }
-
 .blog__title:hover {
-  color: #fa6a28; }
+  color: #faab86; }
 
 .blog__intro {
   color: #f3f2f0;
@@ -528,27 +513,26 @@ html {
   margin: 9rem 3rem 0 3.5rem; }
 
 .project__pg-title {
-  padding-top: 9rem;
-  padding-bottom: 3.5rem; }
+  padding-top: 7.5rem;
+  padding-bottom: 2rem; }
 
 .project__list {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-top: .8rem; }
+  margin-top: 0.8rem; }
   @media only screen and (min-width: 48em) {
     .project__list {
       flex-flow: row wrap;
       justify-content: center; } }
-
 .project__item {
   width: 85%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   margin-bottom: 1.5rem;
-  border-radius: .4rem;
-  border: 0.1rem solid #2A3132; }
+  border-radius: 0.4rem;
+  border: 0.1rem solid #2a3132; }
   @media only screen and (min-width: 37.5em) {
     .project__item {
       width: 65%; } }
@@ -559,20 +543,45 @@ html {
   @media only screen and (min-width: 62.5em) {
     .project__item {
       width: 30%; } }
-
 .project__title {
   margin-bottom: 1rem; }
 
 .project__link, .project__desc {
   width: 100%;
   box-sizing: border-box;
-  background-color: #2A3132; }
+  background-color: #2a3132; }
   .project__link p, .project__desc p {
     color: #f3f2f0;
     margin: 0 1rem 1rem 1rem; }
 
 .project__desc {
   padding-bottom: 1rem; }
+
+.project__personal-projects {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.project__personal-project {
+  font-size: 24px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem; }
+  .project__personal-project h3,
+  .project__personal-project a,
+  .project__personal-project p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem; }
+  .project__personal-project a:visited {
+    color: #1d2122; }
+  .project__personal-project a:hover {
+    background-color: #faab86; }
 
 body {
   background-color: #f3f2f0;

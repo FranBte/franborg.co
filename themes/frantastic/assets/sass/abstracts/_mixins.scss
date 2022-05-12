@@ -1,21 +1,20 @@
 @mixin pg-title {
-    color: $color-grey-dark-1;
-    font-size: 3.5rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    padding-bottom: 1rem;
+  color: $color-grey-dark-1;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 @mixin item-title {
-    text-decoration: none;
-    color: $color-white;
-    font-size: 2rem;
-    font-weight: 100;
-    margin: 1rem 1rem 0 1rem;
+  text-decoration: none;
+  color: $color-white;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 1rem 1rem 0 1rem;
 }
 
 @mixin position-pg {
-    padding-top: 9rem;
-    padding-bottom: 3.5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
 }

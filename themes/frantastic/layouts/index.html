@@ -1,95 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-{{partial "head" .}}
+  {{partial "head" .}}
 
-<body>
+  <body>
     {{partial "header" .}}
 
     <main class="main">
-        <section class="about">
-            <div class="about__img">
-                <div class="img-profile"></div>
-                <!-- css profile image -->
-                <div class="css-img">
-                    <div class="backdrop">
-
-                        <div class="hair">
-                            <div class="hair__r"></div>
-                            <div class="hair__l"></div>
-                            <div class="hair__back"></div>
-                        </div>
-                        <div class="head">
-                            <div class="face">
-                                <div class="eyebrowr"></div>
-                                <div class="eyebrowl"></div>
-                                <div class="glasses">
-                                    <div class="glasses__r">
-                                        <div class="eye__right"></div>
-                                    </div>
-                                    <div class="glasses__l">
-                                        <div class="eye__left"></div>
-                                    </div>
-                                    <div class="glasses__mid"></div>
-                                </div>
-                                <div class="cheek">
-                                    <div class="cheek__r"></div>
-                                    <div class="cheek__l"></div>
-                                </div>
-                                <div class="mouth">
-                                    <div class="mouth__tongue"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shoulders"></div>
-                        <div class="neck">
-                            <div class="neck__shadow"></div>
-                        </div>
-
-
+      <section class="about">
+        <div class="about__img">
+          <div class="img-profile"></div>
+          <!-- css profile image -->
+          <div class="css-img">
+            <div class="backdrop">
+              <div class="hair">
+                <div class="hair__r"></div>
+                <div class="hair__l"></div>
+                <div class="hair__back"></div>
+              </div>
+              <div class="head">
+                <div class="face">
+                  <div class="eyebrowr"></div>
+                  <div class="eyebrowl"></div>
+                  <div class="glasses">
+                    <div class="glasses__r">
+                      <div class="eye__right"></div>
                     </div>
+                    <div class="glasses__l">
+                      <div class="eye__left"></div>
+                    </div>
+                    <div class="glasses__mid"></div>
+                  </div>
+                  <div class="cheek">
+                    <div class="cheek__r"></div>
+                    <div class="cheek__l"></div>
+                  </div>
+                  <div class="mouth">
+                    <div class="mouth__tongue"></div>
+                  </div>
                 </div>
-                <!-- end of css profile image -->
+              </div>
+              <div class="shoulders"></div>
+              <div class="neck">
+                <div class="neck__shadow"></div>
+              </div>
             </div>
-            <!-- end of about img -->
+          </div>
+          <!-- end of css profile image -->
+        </div>
+        <!-- end of about img -->
 
-            <article class="about__intro">
-                <p class="about__text">I'm a front-end developer who strives for
-                    <mark class="about__text--hl">responsive</mark> and
-                    <mark class="about__text--hl">functional</mark> design coupled with
-                    <mark class="about__text--hl">clean</mark> and elegant code.
-                </p>
+        <article class="about__intro">
+          <p class="about__text">
+            I'm a frontend developer who strives for
+            <mark class="about__text--hl">responsive</mark> and
+            <mark class="about__text--hl">functional</mark> design coupled with
+            <mark class="about__text--hl">clean</mark> and elegant code.
+          </p>
+        </article>
+      </section>
+
+      <section class="portfolio">
+        <h2 class="portfolio__title">Picked Projects</h2>
+        <section class="portfolio__list">
+          {{ range .Site.Pages}} {{ if in .RelPermalink "/projects/" }} {{if eq
+          .Params.featured true}}
+          <section class="portfolio__card">
+            <p
+              data-height="250"
+              data-theme-id="dark"
+              data-slug-hash="{{.Params.codepenid}}"
+              data-default-tab="result"
+              data-user="fran-cesca"
+              data-pen-title="Light the Bulb"
+              data-preview="true"
+              class="codepen"
+            >
+              See the Pen
+              <a href="https://codepen.io/fran-cesca/pen/{{.Params.codepenid}}/"
+                >Light the Bulb</a
+              >
+              by francesca (
+              <a href="https://codepen.io/fran-cesca">@fran-cesca</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </p>
+            <script
+              async
+              src="https://static.codepen.io/assets/embed/ei.js"
+            ></script>
+            <article class="portfolio__card-btmbar">
+              <p class="portfolio__card-title">{{.Title}}</p>
             </article>
+          </section>
+          {{end}} {{end}} {{end}}
         </section>
-
-        <section class="portfolio">
-
-            <h2 class="portfolio__title">Picked Projects</h2>
-            <section class="portfolio__list">
-                {{ range .Site.Pages}} {{ if in .RelPermalink "/projects/" }} {{if eq .Params.featured true}}
-                <section class="portfolio__card">
-                    <p data-height="250" data-theme-id="dark" data-slug-hash="{{.Params.codepenid}}" data-default-tab="result"
-                        data-user="fran-cesca" data-pen-title="Light the Bulb" data-preview="true" class="codepen">See
-                        the Pen
-                        <a href="https://codepen.io/fran-cesca/pen/{{.Params.codepenid}}/">Light the Bulb</a> by
-                        francesca (
-                        <a href="https://codepen.io/fran-cesca">@fran-cesca</a>) on
-                        <a href="https://codepen.io">CodePen</a>.</p>
-                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    <article class="portfolio__card-btmbar">
-                        <p class="portfolio__card-title">{{.Title}}</p>
-                    </article>
-                </section>
-                {{end}} {{end}} {{end}}
-            </section>
-            <div class="portfolio__btn">
-                <a href="/projects" class="btn">View More</a>
-            </div>
-
-        </section>
+      </section>
     </main>
 
     {{partial "footer" .}}
-
-</body>
-
+  </body>
 </html>

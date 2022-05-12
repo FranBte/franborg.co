@@ -1,60 +1,93 @@
 .project {
-    &__pg-title {
-        @include position-pg;
+  &__pg-title {
+    @include position-pg;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 0.8rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    width: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid $color-grey-dark-1;
+
+    @media only screen and (min-width: $bp-small) {
+      width: 65%;
     }
 
-    &__list {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        margin-top: .8rem;
-
-        @media only screen and (min-width: $bp-medium) {
-            flex-flow: row wrap;
-            justify-content: center;
-        }
+    @media only screen and (min-width: $bp-medium) {
+      width: 45%;
+      margin: 1.5rem;
     }
 
-    &__item {
-        width: 85%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        margin-bottom: 1.5rem;
-        border-radius: .4rem;
-        border: .1rem solid $color-grey-dark-1;
+    @media only screen and (min-width: $bp-large) {
+      width: 30%;
+    }
+  }
 
-        @media only screen and (min-width: $bp-small) {
-            width: 65%;
-        }
+  &__title {
+    margin-bottom: 1rem;
+  }
 
-        @media only screen and (min-width: $bp-medium) {
-            width: 45%;
-            margin: 1.5rem;
-        }
+  &__link,
+  &__desc {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $color-grey-dark-1;
 
-        @media only screen and (min-width: $bp-large) {
-            width: 30%;
-        }
+    p {
+      color: $color-white;
+      margin: 0 1rem 1rem 1rem;
+    }
+  }
+
+  &__desc {
+    padding-bottom: 1rem;
+  }
+
+  &__personal-projects {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__personal-project {
+    font-size: 24px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    h3,
+    a,
+    p {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 1rem;
     }
 
-    &__title {
-        margin-bottom: 1rem;
+    a:visited {
+      color: #1d2122;
     }
 
-    &__link,
-    &__desc {
-        width: 100%;
-        box-sizing: border-box;
-        background-color: $color-grey-dark-1;
-
-        p {
-            color: $color-white;
-            margin: 0 1rem 1rem 1rem;
-        }
+    a:hover {
+      background-color: #faab86;
     }
-
-    &__desc {
-        padding-bottom: 1rem;
-    }
+  }
 }
